@@ -125,5 +125,5 @@ foreach( GRID ${PDFGRIDS} )
   message( "Resource file : ${GRID}" )
 endforeach()
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/plots.py
-  ${CMAKE_BINARY_DIR}/plots.py COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/plots.py.in
+  ${CMAKE_BINARY_DIR}/plots.py)
